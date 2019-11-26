@@ -5,7 +5,7 @@
 
 char ** parse_args(char *line) {
   unsigned short i;
-  unsigned short ary_size = 4;
+  unsigned short ary_size = 6; // originally i missed the specified max size, this works for larger amounts too
   char **args = malloc(ary_size * sizeof(char *));
   char *cur = line;
   i = 0;
